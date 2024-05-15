@@ -1,0 +1,79 @@
+
+@font-face {
+  font-family: 'Inter-Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../src/fonts/InterDisplay/InterDisplay-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter-Display-Bold';
+  font-style: normal;
+
+  font-display: swap;
+  src: url('../src/fonts/InterDisplay/InterDisplay-Bold.otf') format('opentype');
+}
+
+#name {
+  font-family: Inter-Display-Bold;
+}
+
+
+body{
+  font-family: Inter-Display;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.available{
+
+  padding: 10px 16px;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+
+
+
+  border-radius: 240px;
+  border: 1px solid #D7DDE4;
+  background: transparent;
+  color:#000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 125% */
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.outer{
+  width: 20px;
+  height: 20px;
+  fill: #06CD2F;
+
+  border-radius: 50px;
+}
+
+.smouter{
+  width: 8px;
+  height: 8px;
+  background-color: #06CD2F;
+  border-radius: 50px;
+  align-self: center;
+
+
+}
